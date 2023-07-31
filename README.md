@@ -9,5 +9,3 @@ Things you may want to cover:
 
 * System dependencies
 Postgresql, Node js, and npm installed
-
-* ...
