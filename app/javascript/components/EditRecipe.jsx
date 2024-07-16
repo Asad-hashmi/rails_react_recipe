@@ -127,7 +127,7 @@ class EditRecipe extends React.Component {
                 onChange={this.onChange}
               />
               <button type="submit" className="btn custom-button mt-3">
-                Edit Recipe
+                Update
               </button>
               <Link to="/recipes" className="btn btn-link mt-3">
                 Back to recipes
