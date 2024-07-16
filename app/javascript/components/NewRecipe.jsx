@@ -47,10 +47,16 @@ class NewRecipe extends React.Component {
     })
       .then(response => {
         if (response.ok) {
-          window.location.href = (`/recipe/${response.id}`);
-          return response.json();
+          return response.json(); // Parse JSON response
         }
         throw new Error("Network response was not ok.");
+      })
+      .then(data => {
+        // Access the `id` from the response data
+        const recipeId = data.id;
+
+        // Redirect to the recipe detail page using the retrieved `id`
+        window.location.href = `/recipe/${recipeId}`;
       })
   }
   stripHtmlEntities(str) {
